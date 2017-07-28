@@ -173,3 +173,47 @@ C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-Power
 C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.WpfViews.resources.dll
 C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.ViewFramework.resources.dll
 C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction-PowerShell - 27.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.Controls.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\ConfigMgrTSAction.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\ConfigMgrTSAction.pdb
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.Common.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.Controls.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.DialogFoundation.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.OsdCommon.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.TaskSequenceEditor.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.WqlQueryEngine.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManagement.DialogFramework.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManagement.exe
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManagement.ManagementProvider.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\System.Management.Automation.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.Foundation.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManager.CommonBase.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.ConsoleFramework.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.WizardFramework.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.VSWizardFramework.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.FeaturesUtilities.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.Package.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\DcmObjectModel.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\AdminUI.DcmObjectWrapper.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.RibbonConsole.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.RibbonLayout.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.WpfViews.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.RibbonData.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.ViewFramework.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.EnterpriseManagement.UI.Controls.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManager.CloudBase.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.VirtualManager.UI.ViewModel.Core.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.ConfigurationManager.ManagedBase.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.Foundation.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.ConsoleFramework.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.WpfViews.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.ViewFramework.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\bin\Debug\en\Microsoft.EnterpriseManagement.UI.Controls.resources.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.csprojResolveAssemblyReference.cache
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.RunPowerShellControl.resources
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.Properties.Resources.resources
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.csproj.GenerateResource.Cache
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.dll
+C:\Users\sccmadmin\Documents\Visual Studio 2015\projects\ConfigMgrTSAction-PowerShell - 28.7.2017\ConfigMgrTSAction\obj\Debug\ConfigMgrTSAction.pdb

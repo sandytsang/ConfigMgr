@@ -1,30 +1,43 @@
 //******************************************************************************
 //-----------------------------------------------------------------------
-// Copyright © Microsoft Corporation.  All rights reserved.
-//
-// THIS CODE SAMPLE IS MADE AVAILABLE TO YOU WITHOUT WARRANTY OF ANY KIND
-// AND CONFERS NO RIGHTS ON YOU WHATSOEVER EXCEPT THE RIGHT TO REVIEW IT
-// SOLELY AS A REFERENCE.  THE ENTIRE RISK OF USE OR RESULTS FROM USE OF 
-// THIS CODE SAMPLE REMAINS WITH YOU.
-//-----------------------------------------------------------------------
 //
 //  Sample Task Sequence Action MOF
 //
+//  Where XXX is your three letter site code
 //  This mof requires the site namespace when compiled, ie:
-//    Mofcomp -N:root\sms\site_XXX ConfigMgrTSAction.mof
+//  Mofcomp ConfigMgrTSAction.mof
 //  Where XXX is your three letter site code
 //
 //******************************************************************************
 
-[   CommandLine("smsswd.exe /run: powershell.exe -executionpolicy bypass -Command Invoke-Expression %1),    
+#pragma autorecover 
+
+#pragma namespace("\\\\.\\root") 
+// SMS Root Storage 
+instance of __Namespace 
+{ 
+    Name = "SMS"; 
+}; 
+
+#pragma namespace("\\\\.\\root\\SMS") 
+// Configuration Manager database name for this computer. 
+instance of __Namespace 
+{ 
+    Name = "site_XXX"; 
+}; 
+
+#pragma namespace("\\\\.\\root\\SMS\\site_XXX") 
+
+#pragma classflags("forceupdate")  
+
+[   CommandLine("smsswd.exe /run: powershell.exe -executionpolicy bypass -Command \"& {%1}\""),    
     ActionCategory("My Custom Action Category,1,7"),  
     ActionName{"ConfigMgrTSAction.dll", "ConfigMgrTSAction.Properties.Resources", "RunPowerShellControl"},  
     ActionUI{"ConfigMgrTSAction.dll", "ConfigMgrTSAction","RunPowerShellControl","ActionOption"}  
     ]  
-class CustomAction_RunPowerShellControl : SMS_TaskSequence_Action  
+class CustomTSAction_RunPowerShellControl : SMS_TaskSequence_Action  
 {  
     [Not_Null, CommandLineArg(1)]  
     string          RunPowerShell; 
     [SuccessCodes, Not_Null] string SuccessCodes = "0 3010";
 };
-
