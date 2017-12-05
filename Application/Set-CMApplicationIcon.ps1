@@ -16,21 +16,21 @@ History:
 
 Example:
 1.	Resize application icon size with 110 x 110 pixel
-	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
+	.\Set-CMApplicationIcon.ps1 -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
 	
 2.	Resize application icon with specified size between 16 to 512 pixel
-	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
+	.\Set-CMApplicationIcon.ps1 -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
 
 3.	Resize application icon with 110 x 110 pixel, and export the resized icon file to a specified folder
-	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFolder "D:\Icons"
+	.\Set-CMApplicationIcon.ps1 -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFolder "D:\Icons"
 
 4.	Set a new icon file for application with 110 x 110 pixel
 	This will resize the new image size as 110 x 110 pixel, then set it as icon.
-	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFileName "D:\Icons\SCConfigMgr2.bmp"
+	.\Set-CMApplicationIcon.ps1 -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFileName "D:\Icons\SCConfigMgr2.bmp"
 	
 5.	Set a new icon file for application with specified size
 	This will resize the new image size as you specified, then set it as icon
-	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconSize 400 -IconFileName "D:\Icons\SCConfigMgr2.bmp"
+	.\Set-CMApplicationIcon.ps1 -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconSize 400 -IconFileName "D:\Icons\SCConfigMgr2.bmp"
 #>
 
 [CmdletBinding(SupportsShouldProcess = $true)]
