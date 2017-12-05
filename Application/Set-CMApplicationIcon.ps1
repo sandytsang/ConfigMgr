@@ -5,7 +5,7 @@
 	 Created on:   	12/4/2017 9:02 PM
 	 Created by:   	Zeng Yinghua
 	 Organization: 	
-	 Filename:     	
+	 Filename:     	Set-CMApplicationIcon.ps1
 	===========================================================================
 	.DESCRIPTION
 		This funtion can set icon for applications
@@ -15,16 +15,22 @@ History:
 - 2017 Dec.04, Created script by Zeng Yinghua
 
 Example:
-1. convert 7-zip icon size to 300x300 pixel, then set the new icon to 7-zip. 
-.\Set-CMApplicationIcon -SiteServer "CM01.zit.local" -SiteCode "ZIT" -ApplicationName "7-zip" -IconSize "300"
+1.	Resize application icon size with 110 x 110 pixel
+	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
+	
+2.	Resize application icon with specified size between 16 to 512 pixel
+	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip"
 
-2. convert 7-zip icon size to 110x110 pixel (defaul setting), save icon file to D:\Icon folder, then set the new icon to 7-zip.  You must create icon folder manually before run this script
-.\Set-CMApplicationIcon -SiteServer "CM01.zit.local" -SiteCode "ZIT" -ApplicationName "7-zip" -IconFolder "D:\Icon"
+3.	Resize application icon with 110 x 110 pixel, and export the resized icon file to a specified folder
+	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFolder "D:\Icons"
 
-3. use "D:\Icon\7-zip.jpg" is icon file, convert it's size to 200x200 pixel, and save icon file to D:\Icon folder, then set the new icon to 7-zip. You must create icon folder manually before run this script
-.\Set-CMApplicationIcon -SiteServer "CM01.zit.local" -SiteCode "ZIT" -ApplicationName "7-zip" -IconSize "200" -IconFolder "D:\Icon" -IconFileName "D:\Icon\7-zip.jpg"
-
-
+4.	Set a new icon file for application with 110 x 110 pixel
+	This will resize the new image size as 110 x 110 pixel, then set it as icon.
+	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconFileName "D:\Icons\SCConfigMgr2.bmp"
+	
+5.	Set a new icon file for application with specified size
+	This will resize the new image size as you specified, then set it as icon
+	.\Set-CMApplicationIcon -SiteServer "Your Site Server" -SiteCode "Your Site Code" -ApplicationName "7-zip" -IconSize 400 -IconFileName "D:\Icons\SCConfigMgr2.bmp"
 #>
 
 [CmdletBinding(SupportsShouldProcess = $true)]
