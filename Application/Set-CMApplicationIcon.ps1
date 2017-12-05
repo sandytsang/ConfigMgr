@@ -53,7 +53,7 @@ param (
 
 	[parameter(Mandatory = $false, ValueFromPipeline = $true, HelpMessage = "Specify Icon Size, recommanded 108")]
 	[ValidateRange(16, 512)]
-	[int]$IconSize = 108,
+	[int]$IconSize = 110,
 	#Icon folder
 
 	[parameter(Mandatory = $false, ValueFromPipeline = $true, HelpMessage = "Specify Icon folder name")]
