@@ -1,0 +1,121 @@
+<RootNodeDescription NamespaceGuid="c192799c-82cd-43cc-bc11-12996bca800f" Id="ContentStatusDetails" SearchFolderId="ContentStatusDetailsMonitoringQuery" DisplayName="Content Status Details" Description="ContentStatusDetailsNodeDescription">
+	<SecurityConfiguration>
+	  <ClassPermissions>
+		<ActionSecurityDescription ClassObject="SMS_Application" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_BootImagePackage" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_DriverPackage" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_ImagePackage" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_OperatingSystemInstallPackage" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_Package" RequiredPermissions="1" />
+		<ActionSecurityDescription ClassObject="SMS_SoftwareUpdatesPackage" RequiredPermissions="1" />
+	  </ClassPermissions>
+	</SecurityConfiguration>
+	<ResourceAssembly>
+	  <Assembly>AdminUI.ContentMonitoring.dll</Assembly>
+	  <Type>Microsoft.ConfigurationManagement.AdminConsole.ContentMonitoring.Properties.Resources.resources</Type>
+	</ResourceAssembly>
+	<ImagesDescription>
+	  <ResourceAssembly>
+		<Assembly>AdminUI.UIResources.dll</Assembly>
+		<Type>Microsoft.ConfigurationManagement.AdminConsole.UIResources.Properties.Resources.resources</Type>
+	  </ResourceAssembly>
+	  <ImageResourceName>ContentStatus</ImageResourceName>
+	</ImagesDescription>
+	<ViewAssemblyDescriptions>
+	  <ViewAssemblyDescription>
+		<Assembly>AdminUI.ConsoleView.dll</Assembly>
+		<Type>Microsoft.ConfigurationManagement.AdminConsole.ConsoleView.ViewDescription</Type>
+		<CustomData>
+		  <ConfigurationData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EnableSearch="true">
+			<PropertyItemsData>
+			  <PropertyItemsData>
+				<Properties>
+				  <string>SoftwareName</string>
+				  <string>ObjectType</string>
+				  <string>Targeted</string>
+				  <string>SourceSize</string>
+				  <string>Success</string>
+				  <string>DateCreated</string>
+				  <string>PackageID</string>
+				  <string>SourceVersion</string>
+				</Properties>
+				<ClassName>SMS_ObjectContentInfo</ClassName>
+			  </PropertyItemsData>
+			</PropertyItemsData>
+		  </ConfigurationData>
+		</CustomData>
+	  </ViewAssemblyDescription>
+	</ViewAssemblyDescriptions>
+	<Queries>
+	  <QueryDescription NamespaceGuid="fb91327a-09b3-4e3f-9af7-879c29a7de36" Type="WQL" DisplayName="##SUB:SoftwareName##" Description="##SUB:Description##">
+		<Query>SELECT * FROM SMS_ObjectContentExtraInfo</Query>
+		<Actions>
+		  <ActionDescription NamespaceGuid="f0578ca4-99ef-4613-9eeb-4b53459ed33c" Class="Group" GroupAsRegion="true" SelectionMode="Both" DisplayName="SelectedContentActionGroupName" MnemonicDisplayName="SelectedContentActionGroupName" Description="SelectedContentActionGroupName">
+			<ShowOn>
+			  <string>DefaultHomeTab</string>
+			  <string>ContextMenu</string>
+			</ShowOn>
+			<ResourceAssembly>
+			  <Assembly>AdminUI.SiteSystems.dll</Assembly>
+			  <Type>Microsoft.ConfigurationManagement.AdminConsole.SiteSystems.Properties.Resources.resources</Type>
+			</ResourceAssembly>
+			<ActionGroups>
+			  <ActionDescription NamespaceGuid="c4e7c445-06e6-433a-b60d-4905f246365e" Class="Navigation" DisplayName="GoToRelatedStatus" MnemonicDisplayName="GoToRelatedStatusMnemonic" Description="GoToRelatedStatusDescription" RefreshBeforeExecute="false" SqmDataPoint="3717" DefaultAction="true">
+				<ShowOn>
+				  <string>DefaultHomeTab</string>
+				  <string>ContextMenu</string>
+				</ShowOn>
+				<ResourceAssembly>
+				  <Assembly>AdminUI.DeploymentStatus.dll</Assembly>
+				  <Type>Microsoft.ConfigurationManagement.AdminConsole.DeploymentStatus.Properties.Resources.resources</Type>
+				</ResourceAssembly>
+				<ImagesDescription>
+				  <ResourceAssembly>
+					<Assembly>AdminUI.UIResources.dll</Assembly>
+					<Type>Microsoft.ConfigurationManagement.AdminConsole.UIResources.Properties.Resources.resources</Type>
+				  </ResourceAssembly>
+				  <ImageResourceName>ViewStatus</ImageResourceName>
+				</ImagesDescription>
+				<NavigationDescription>
+				  <PathAlias>ContentStatusMonitoring</PathAlias>
+				  <NamedValueItems>
+					<NamedValueItem>
+					  <ObjectName>NodeHashKey</ObjectName>
+					  <ObjectValue>PackageID</ObjectValue>
+					</NamedValueItem>
+				  </NamedValueItems>
+				</NavigationDescription>
+			  </ActionDescription>
+			  <ActionDescription NamespaceGuid="6f3d757c-caff-4fe7-a49f-02d498256e2b" ActionVerb="Refresh" Class="Default" SelectionMode="Both" RibbonDisplayType="TextAndSmallImage">
+				<ShowOn>
+				  <string>DefaultHomeTab</string>
+				  <string>ContextMenu</string>
+				</ShowOn>
+			  </ActionDescription>
+			</ActionGroups>
+		  </ActionDescription>
+		</Actions>
+		<DetailsPaneDescription ObjectClass="SMS_ObjectContentExtraInfo">
+		  <PageList>
+			<PanePageDescription ObjectClass="SMS_ObjectContentExtraInfo" PageGuid="c33efb6f-cecc-42f9-8483-33ea7154b18f">
+			  <PageTitle>Details</PageTitle>
+			  <QuerySettingsDescription QueryClass="SMS_PackageStatusDistPointsSummarizer">
+				<Queries>
+				  <QueryDescription NamespaceGuid="84271aaa-76ef-4d4c-a756-cf0e8172d6c8" Type="WQL">
+					<Query>SELECT * FROM SMS_PackageStatusDistPointsSummarizer WHERE PackageID='##SUB:PackageID##'</Query>
+				  </QueryDescription>
+				</Queries>
+				<PropertyList>
+				  <PropertyDescription Name="LastCopied" />
+				  <PropertyDescription Name="PackageID" />
+				  <PropertyDescription Name="ServerNALPath" />
+				  <PropertyDescription Name="State" />
+				  <PropertyDescription Name="SummaryDate" />
+				</PropertyList>
+			  </QuerySettingsDescription>
+			</PanePageDescription>
+		  </PageList>
+		</DetailsPaneDescription>
+	  </QueryDescription>
+	</Queries>
+  </RootNodeDescription>
