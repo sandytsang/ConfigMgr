@@ -1,0 +1,2 @@
+https://download.microsoft.com/download/C/E/6/CE63C73A-31D6-4473-9216-19D7B88FD2DF/MicrosoftDeploymentToolkit_x86.msi
+https://download.microsoft.com/download/C/E/6/CE63C73A-31D6-4473-9216-19D7B88FD2DF/MicrosoftDeploymentToolkit_x64.msi
