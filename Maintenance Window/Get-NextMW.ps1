@@ -1,4 +1,6 @@
-﻿param ([Parameter(Mandatory = $False)]
+#https://msendpointmgr.com/2018/05/17/configmgr-1802-run-scripts-localadmins/
+ 
+ param ([Parameter(Mandatory = $False)]
 	[string]$SoftwareMW,
 	[Parameter(Mandatory = $False)]
 	[string]$AllProgramsMW,
