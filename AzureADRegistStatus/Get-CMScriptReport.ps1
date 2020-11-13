@@ -66,4 +66,5 @@ Function Get-CMScriptOutputResult {
 $Report = Get-CMScriptOutputResult -SiteServer  "cm02.zit.local" -SiteCode "CBX" -ClientOperationID "16778225"
 $Report
 
-$Report | Export-Csv C:\temp\AzureADRegistyReport.csv
+#Without using sort object with TenantName, exported CSV is missing lots of informations
+$Report | Sort-Object TenantName | Export-Csv C:\temp\AzureADRegistyReport.csv
