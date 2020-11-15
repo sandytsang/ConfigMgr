@@ -22,9 +22,9 @@
 #>
 
 $command = (dsregcmd.exe /status) | Select-String (" : ")
-Remove-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force -ErrorAction SilentlyContinue | Out-Null
-New-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force | Out-Null
-$registryPath = "HKLM:\Software\01-CustomKeys\DSREGCMDSTATUS"
+Remove-Item -Path "HKLM:\Software\CustomKeys\DSREGCMDSTATUS" -Force -ErrorAction SilentlyContinue | Out-Null
+New-Item -Path "HKLM:\Software" -Name "CustomKeys\DSREGCMDSTATUS" -Force | Out-Null
+$registryPath = "HKLM:\Software\CustomKeys\DSREGCMDSTATUS"
 $datetime = (Get-date -Format "yyyyMMddHHmm").ToString()
 New-ItemProperty -Path $registryPath -Name "ScriptRunDateTime" -Value $datetime -PropertyType String -Force | Out-Null
 
