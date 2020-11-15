@@ -18,14 +18,23 @@
 
 .VERSION HISTORY
     1.0.0 - (2020-11-13) Script created 
+    1.0.1 - (2020-11-15) Added results to registry, for better inventory reports
 #>
 
 $command = (dsregcmd.exe /status) | Select-String (" : ")
+New-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force
+$registryPath = "HKLM:\Software\01-CustomKeys\DSREGCMDSTATUS"
+$datetime = (Get-date -Format "yyyyMMddHHmm").ToString()
+New-ItemProperty -Path $registryPath -Name "01DateTime" -Value $datetime -PropertyType String -Force
 
 $dsregcmdobj = New-Object -TypeName psobject
 foreach ( $line in $command ) {
     $output = $line.ToString().trim() -split " : "
-    $dsregcmdobj| Add-Member -MemberType NoteProperty -Name $output[0].Replace(" :","") -Value $output[1]
+    $Name = $output[0].Replace(" :","")
+    $Value = $output[1]
+    $dsregcmdobj| Add-Member -MemberType NoteProperty -Name "$($Name)" -Value "$($Value)"
+    New-ItemProperty -Path $registryPath -Name "$($Name)" -Value "$($Value)" -PropertyType String -Force
 
 }
+
 $dsregcmdobj
