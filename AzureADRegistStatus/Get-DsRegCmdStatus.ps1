@@ -22,7 +22,7 @@
 #>
 
 $command = (dsregcmd.exe /status) | Select-String (" : ")
-New-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force
+New-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force | Out-Null
 $registryPath = "HKLM:\Software\01-CustomKeys\DSREGCMDSTATUS"
 $datetime = (Get-date -Format "yyyyMMddHHmm").ToString()
 New-ItemProperty -Path $registryPath -Name "01DateTime" -Value $datetime -PropertyType String -Force | Out-Null
