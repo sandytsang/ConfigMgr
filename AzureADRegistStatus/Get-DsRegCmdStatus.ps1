@@ -25,7 +25,7 @@ $command = (dsregcmd.exe /status) | Select-String (" : ")
 New-Item -Path "HKLM:\Software" -Name "01-CustomKeys\DSREGCMDSTATUS" -Force
 $registryPath = "HKLM:\Software\01-CustomKeys\DSREGCMDSTATUS"
 $datetime = (Get-date -Format "yyyyMMddHHmm").ToString()
-New-ItemProperty -Path $registryPath -Name "01DateTime" -Value $datetime -PropertyType String -Force
+New-ItemProperty -Path $registryPath -Name "01DateTime" -Value $datetime -PropertyType String -Force | Out-Null
 
 $dsregcmdobj = New-Object -TypeName psobject
 foreach ( $line in $command ) {
@@ -33,7 +33,7 @@ foreach ( $line in $command ) {
     $Name = $output[0].Replace(" :","")
     $Value = $output[1]
     $dsregcmdobj| Add-Member -MemberType NoteProperty -Name "$($Name)" -Value "$($Value)"
-    New-ItemProperty -Path $registryPath -Name "$($Name)" -Value "$($Value)" -PropertyType String -Force
+    New-ItemProperty -Path $registryPath -Name "$($Name)" -Value "$($Value)" -PropertyType String -Force | out-null
 
 }
 
