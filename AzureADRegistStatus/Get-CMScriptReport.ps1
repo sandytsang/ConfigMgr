@@ -45,7 +45,7 @@ Function Get-CMScriptOutputResult {
     
     #Query WMI on the Primary Site Server for script execution results
     $WMIQuery = "Select * from SMS_ScriptsExecutionStatus where ClientOperationID = '$ClientOperationID'"
-    $WMIResult = Get-WmiObject -Query $WMIQuery -ComputerName $CMPrimarySiteServer -Namespace "root\SMS\Site_$CMSiteCode"
+    $WMIResult = Get-WmiObject -Query $WMIQuery -ComputerName $SiteServer -Namespace "root\SMS\Site_$SiteCode"
     
     $OutputObj = @()
     Foreach ($result in $WMIResult) {
